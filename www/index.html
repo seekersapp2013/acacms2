@@ -1,3 +1,4 @@
+{{#section page1 label="Index Page"}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,144 +6,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{tile label="Website Title"}}</title>
+    <title>{{page1 label="Page1 Title"}}</title>
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icons.css">
     <script src="js/main.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+    
 </head>
 
 <body>
-    <nav>
-        <div class="menu">
-            <a class="item" href="./about.html">About Us</a>
-            <div class="item">
-                <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                <div class="dropdown" id="resources">
-                    <ul class="menu">
-                        <li>
-                            <a href="./resources.html">Publications</a>
-                        </li>
-                        <li>
-                            <a href="./resources.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="./resources.html">Videos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                <div class="dropdown" id="infographics">
-                    <ul class="menu">
-                        <li>
-                            <a href="./infographics.html">Governance</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Convictions & Recovery</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Citizens</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Agencies</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="logo">
-            <a class="item" href="./">   <img src="img/agency4.png" alt="agency4" class="partner"></a>
-            <a class="item" href="./">   <img src="img/agency6.png" alt="agency6" class="partner"></a>
-            <a class="item" href="./">  <img src="img/agency5.png" alt="agency5" class="partner"></a>
-            <a class="item" href="./"> <img src="img/logo.svg" alt="Logo"></a>
-            <a class="item" href="./"> <img src="img/agency1.png" alt="agency1" class="partner"></a>
-            <a class="item" href="./"> <img src="img/agency2.png" alt="agency2" class="partner"></a>
-            <a class="item" href="./"> <img src="img/agency3.png" alt="agency3" class="partner"></a>
-        </div>
-        <div class="menu">
-            <a class="item" href="./blog.html">News & Events</a>
-            <a class="item" href="./log-in.html">Log In</a>
-            <a href="./sign-up.html">
-                <button class="item btn nav blue">Create Profile</button>
-            </a>
-            <i class="icon-search txt-primary"></i>
-        </div>
-        <i class="icon-menu" data-target="foldable-menu" data-toggle="open"></i>
-        <div class="foldable-menu" data-toggled="false">
-            <div class="toggle">
-                <i class="icon-cancel" data-target="foldable-menu" data-toggle="close"></i>
-            </div>
-            <div class="menu">
-                <a class="item" href="./about.html">About Us</a>
-                <div class="item">
-                    <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                    <div class="dropdown" id="resources">
-                        <ul class="menu">
-                            <li>
-                                <a href="./resources.html">Publications</a>
-                            </li>
-                            <li>
-                                <a href="./resources.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="./resources.html">Videos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                    <div class="dropdown" id="infographics">
-                        <ul class="menu">
-                            <li>
-                                <a href="./infographics.html">Governance</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Convictions & Recovery</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Citizens</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Agencies</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <a class="item" href="./blog.html">News & Events</a>
-                <a class="item" href="./log-in.html">Log In</a>
-                <a href="./sign-up.html">
-                    <button class="item btn nav blue">Create Profile</button>
-                </a>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <div class="hero" style="background-image: url(img/hero1.png);">
-            <div class="prev">
-                <div class="btn rounded teal">
-                    <i class="icon-arrow-left"></i>
-                </div>
-            </div>
-            <div class="container controls">
-                <div class="heading">
-                    <h3 class="txt-black">Accessing the Changes in the Anti-corruption Landscape of the Country</h3>
-                </div>
-                <div class="subheading">
-                    <p class="txt-blue">Get Up-to-date Information on the happenings in the Anti-corruption sphere</p>
-                </div>
-                <div class="cta">
-                    <a href="./about.html">  <button class="btn green">Get Started</button></a>
-                </div>
-            </div>
-            <div class="next">
-                <div class="btn rounded teal">
-                    <i class="icon-arrow-right"></i>
-                </div>
-            </div>
-        </div>
+
+    {{> header}}
+
+        <main>
+
+            {{> hero}}
+
+            <!--Chat Widgets Starts Here-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/608ce49462662a09efc3da99/1f4j5ppuk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+            <!--Chat Widgets Ends Here-->
+<!--            
         <div class="chat-bot">
             <div class="dropdown" id="chat">
                 <div class="content">
@@ -158,69 +59,88 @@
             <div class="chat-btn flex-center rounded btn green" data-action="dropdown" data-target="chat">
                 <i class="icon-chat"></i>
             </div>
-        </div>
-        <div class="section">
+        </div> -->
+        {{#section 2 label="Our Partners" multiple=true}}
+
+          <div class="section">
             <div class="heading pad-2">
-                <h3>Our Partners are key</h3>
+                <h3>{{partnerssectiontitle}}</h3>
             </div>
             <div class="col-2">
+        
                 <div class="wid-45 flex-center">
-                    <img src="img/partners.png" class="fit" alt="Our Partners are key">
+                    <img src="{{partnersimage}}" class="fit" alt="Our Partners are key">
                 </div>
                 <div class="wid-36 pad-2">
-                    <h3>Fighting Corruption through synergy and support of ACAs</h3>
-                    <p class="txt-blue">Fighting Corruption through targeted capacity building, support on forensics and
-                        evidence gathering, peer learning, information sharing and forging synergy.
-                    </p>
+                    <h3>{{partnerstitle}}</h3>
+                    <p class="txt-blue">{{partnersdescription type=html}} </p>
                 </div>
             </div>
         </div>
-        <div class="section bg-dim">
+    
+        </div>
+        {{/section}}
+        
+        {{#section 3 label="Our Partners2" multiple=true}}
+        <div>
+
+          <div class="section bg-dim">
             <div class="col-2 rev">
                 <div class="wid-45 pad-2">
-                    <h3>An Online Central Database on Anti-Corruption Works</h3>
-                    <p class="txt-blue">The online database would facilitate prompt information gathering and data
-                        management amongst ACAs to ensure ready availability of data.</p>
+                    <h3>{{partnerstitle}}</h3>
+                    <p class="txt-blue">{{partnersdescription type=html}}</p>
                     <div class="cta">
-                        <a href="./about.html">      <button class="btn green">Read More</button></a>
+                        <a href="{{ctalink}}">      <button class="btn green">{{ctaname}}</button></a>
                     </div>
                 </div>
                 <div class="wid-36 flex-center">
-                    <img src="img/check.png" class="fit" alt="Our Partners are key">
+                    <img src="{{partnersimage}}" class="fit" alt="Our Partners are key">
                 </div>
             </div>
         </div>
-        <div class="section">
+       
+        </div>
+        {{/section}}
+
+        {{#section 4 label="Our Partners3" multiple=true}}
+         <div class="section">
             <div class="col-2">
                 <div class="wid-45 flex-center">
-                    <img src="img/aca-stat.png" class="fit" alt="Our Partners are key">
+                    <img src="{{partnersimage}}" class="fit" alt="Our Partners are key">
                 </div>
                 <div class="wid-36 pad-2">
-                    <h2>Investigation</h2>
-                    <h2>Development</h2>
-                    <h2>Strategy</h2>
-                    <p class="txt-black">The support generated by the coordination of this online database will strengthen our ACAs to perform their core duties</p>
+                    <h2>{{heading1}}</h2>
+                    <h2>{{heading2}}</h2>
+                    <h2>{{heading3}}</h2>
+                    <p class="txt-black">{{partnersdescription type=html}}</p>
                     <div class="cta">
-                        <a href="./about.html">    <button class="btn teal">Core Service</button> </a>
+                        <a href="{{ctalink}}">    <button class="btn teal">{{ctaname}}</button> </a>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="section auto-height bg-teal">
-            <h1 class="txt-white txt-center">Meet Our Partners</h1>
+            <h1 class="txt-white txt-center">{{header4}}</h1>
             <hr class="divider">
             <div class="partners">
+                {{/section}}
+                
+        {{#section 5 label="Partners List" multiple=true}}
                 <div class="card it">
                     <div class="img">
-                        <img src="img/agency1.png" alt="">
+                        <img src="{{partnerlogo}}" alt="">
                     </div>
                     <div class="text txt-center">
-                        <h4>EFCC</h4>
-                        <p class="txt-blue">Economic and Financial Crimes Commission</p>
-                        <a href="./about.html">    <button class="btn small green">Learn more</button></a>
+                        <h4>{{Partneracronym}}</h4>
+                        <p class="txt-blue">{{partnername}}</p>
+                        <a href="{{ctalink}}">    <button class="btn small green">{{ctaname}}</button></a>
                     </div>
+                
                 </div>
-                <div class="card it">
+                {{/section}}
+                <!-- <div class="card it">
                     <div class="img">
                         <img src="img/agency2.png" alt="">
                     </div>
@@ -278,81 +198,49 @@
                         <h4>Others</h4>
                         <p class="txt-blue">Economic and Financial Crimes Commission</p>
                         <a href="./about.html">     <button class="btn small green">Learn more</button></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
+
+        {{#section 6 label="Event" multiple=true}}
         <div class="section bg-light-blue">
             <div class="col-2 rev">
                 <div class="wid-45 pad-2">
-                    <h3>Get Updates on Events & Projects</h3>
-                    <p class="txt-black">Stay in touch with recent happenings, from Annual General Meetings to Anti-corruption conferences & more</p>
+                    <h3>{{eventstitle}}</h3>
+                    <p class="txt-black">{{eventsdescription type=html}}</p>
                     <div class="cta">
-                        <a href="./blog.html">    <button class="btn teal">News & Events</button></a>
+                        <a href="{{ctalink}}">    <button class="btn teal">{{ctaname}}</button></a>
                     </div>
                 </div>
                 <div class="wid-36 flex-center">
-                    <img src="img/laptop.png" class="fit" alt="Get Updates on Events & Projects">
+                    <img src="{{eventsimage}}" class="fit" alt="Get Updates on Events & Projects">
                 </div>
             </div>
         </div>
+
+{{/section}}
+{{#section 7 label="Upload Section" multiple=true}}
         <div class="section auto-height start-uploading">
             <div class="col-2">
                 <div class="wid-36 pad-4">
-                    <h3 class="txt-dark-blue">Start Uploading
-                        your documents</h3>
-                    <p class="txt-blue">Create a profile, Upload your 
-                        documents & view resources.</p>
+                    <h3 class="txt-dark-blue">{{sectiontitle}}</h3>
+                    <p class="txt-blue">{{sectiondescription type=html}}</p>
                 </div>
                 <div class="cta wid-45 pad-4">
-                    <a href="./about.html">  <button class="btn green">Get Started</button></a>
+                    <a href="{{ctalink}}">  <button class="btn green">{{ctaname}}</button></a>
+            
+              
                 </div>
             </div>
         </div>
+
+{{/section}}
     </main>
-    <footer class="bg-dark-blue">
-        <div class="sections">
-            <div>
-                <h5>Contact</h5>
-                <a href="./index.html">cddwestafrica.org</a>
-            </div>
-            <div>
-                <div>
-                    <h5>About</h5>
-                    <a href="./about.html">About CDD</a>
-                    <a href="./about.html">About Project</a>
-                </div>
-                <div>
-                    <h5>Resources</h5>
-                    <a href="./resources.html">Publications</a>
-                    <a href="./resources.html">E-Library</a>
-                    <a href="./resources.html">Gallery</a>
-                    <a href="./resources.html">Videos</a>
-                </div>
-                <div>
-                    <h5>Infographics</h5>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                </div>
-                <div>
-                    <h5>Resources</h5>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                </div>
-            </div>
-        </div>
-        <hr class="divider">
-        <div class="foot">
-            <img src="img/footer-logo.png" alt="">
-            <p>2021 CDDWestAfrica inc. All rights reserved.</p>
-        </div>
-    </footer>
+    {{> footer}}
+
 </body>
 
 </html>
+
+{{/section}}

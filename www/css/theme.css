@@ -237,13 +237,13 @@ input[type="checkbox"] {
 }
 
 .dropdown {
-  display: none;
+  /* display: none; */
 }
 
 .dropdown.open {
-  display: block;
+  /* display: block;
   position: absolute;
-  z-index: 10;
+  z-index: 10; */
 }
 
 .card {
