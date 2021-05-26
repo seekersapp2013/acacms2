@@ -7,12 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{Infographics}}</title>
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <script src="js/main.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  
+    {{> head}}
 
     
 </head>
@@ -22,11 +17,11 @@
     {{> header}}
 
         <main>
-            <div class="hero small" style="background-image: url({{Infographicsbg}}); background-position: bottom;">
+            <div class="hero small" data-jo="true"  style="background-image: url({{Infographicsbg}}); background-position: bottom;">
                 <div class="container no-controls">
                     <div class="page-info">
-                        <h3 class="txt-primary txt-center m-0">{{Infographics}}</h3>
-                        <p class="txt-black txt-center m-0">{{Infographicsdescription}}</p>
+                        <h3 class="txt-primary txt-center m-0" data-jo="true" >{{Infographics}}</h3>
+                        <p class="txt-black txt-center m-0" data-jo="true" style="color: white;" >{{Infographicsdescription}}</p>
                     </div>
                 </div>
             </div>
@@ -68,10 +63,10 @@
         </div> -->
 
 
-        <div class="section auto-height infographics">
+        <div class="section auto-height infographics" data-jo="true" data-jo-content="repeated">
             <div class="items">
                 
-            {{#section 9 label="Infographics" multiple=true}}
+            {{#section 9 label="Infographics" multiple=true sortable=true}}
                 <div class="card">
                     <div class="img" style="background-image: url({{infographicslogo}});"></div>
                     <div class="details"> 
@@ -81,6 +76,7 @@
                 </div>
                 
         {{/section}}
+        
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -215,10 +211,10 @@
            
         </div>
 
-
-        <div class="footer flex-center pad-4">
+        {{> pagination}}
+        <!-- <div class="footer flex-center pad-4">
             <button class="btn dim-blue nav" onclick="plusSlides(1)">Next Page</button>
-        </div>
+        </div> -->
     </main>
     {{> footer}}
 

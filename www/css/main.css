@@ -1,5 +1,6 @@
 nav {
   width: 100vw;
+  /* height: 7vw; */
   position: fixed;
   top: 0px;
   left: 0px;
@@ -226,6 +227,20 @@ nav > .foldable-menu > div.toggle {
 
   color: #004999;
 }
+
+
+li:hover {
+  background-color: #010066;
+  color: white;
+  /* text-decoration: yellow; */
+}
+h5:hover{
+  background-color: #010066;
+  color: white;
+}
+
+
+
 .cont {
   width: 19.3vw;
   text-align: center;
@@ -717,13 +732,14 @@ footer a {
 
 .breaking-news > div {
   background: #c31815;
-  padding: 0.8em 8em;
+  padding: 0.5em 8em;
   display: flex;
   align-items: center;
+  box-sizing: none;
 }
 
 .breaking-news .label {
-  padding: 0.8em 1em;
+  padding: 0.7em 0.5em;
   background: #ffffff;
   margin-right: 0.8em;
   height: 3em;
@@ -831,6 +847,7 @@ footer a {
   display: flex;
   align-items: center;
   padding: 1em 0em;
+  margin-left: -48em;
 }
 
 .upcoming-events > .head h6 {
@@ -854,6 +871,7 @@ footer a {
 .upcoming-events > .content .event .img {
   width: calc(((100vw - 2em - 22em) / 2) * 0.4);
   height: calc((((100vw - 2em - 22em) / 2) * 0.4) * 0.67);
+  margin-top: 3em;
   margin-right: 1em;
   background-position: center;
   background-size: cover;
@@ -1226,7 +1244,7 @@ main > .about:nth-child(even) > div {
   }
 
   .container.auth .card, .container.auth .card.wider {
-    width: calc(100vw - 4em);
+    width: calc(100vw - 7em);
     margin: 4em 0em;
   }
   

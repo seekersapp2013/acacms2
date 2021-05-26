@@ -10,43 +10,120 @@
         <link rel="stylesheet" href="css/icons.css">
         <script src="js/main.js"></script>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    
+    <style>
+        p {
+  text-align: left;
+  padding-top: 1em;
+}
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   prefixes courtesy of autoprefixer
+   */
+ul.social-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+ul.social-set li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+/* Font Awesome icons */
+a.sociali {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding: 10px;
+  /* background: #accfc0; */
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+  padding-bottom: 10px !important;
+}
+a.sociali:hover, a.sociali:focus {
+    color: #010066;
+  background: #f8f7fffa;
+}
+
+        </style>
     </head>
     <body>
         <footer class="bg-dark-blue">
             <div class="sections">
                 <div>
-                    <h5>Contact</h5>
+                    <h5>Home</h5>
                     <a href="./index.html">cddwestafrica.org</a>
+                    <section class="">
+                        <ul class="social-set">
+                            <li><a class="sociali" href="#" target="_blank" aria-label="Twitter">
+                              <i class="fa fa-twitter fa-fw" title="Twitter"></i></a></li>
+                            <li><a class="sociali" href="#" target="_blank" aria-label="YouTube">
+                              <i class="fa fa-youtube fa-fw" title="YouTube"></i></a></li>
+                            <li><a class="sociali" href="#" target="_blank" aria-label="Instagram">
+                              <i class="fa fa-instagram fa-fw" title="Instagram"></i></a></li>
+                            <li><a class="sociali" href="#" target="_blank" aria-label="Facebook">
+                              <i class="fa fa-facebook-square fa-fw" title="Facebook"></i></a></li>
+
+
+                    </ul>
+                </section>
+
                 </div>
                 <div>
                     <div>
                         <h5>About</h5>
-                        <a href="./about.html">About CDD</a>
-                        <a href="./about.html">About Project</a>
+                        <a href="./about.html">CDD</a>
+                        <a href="./about.html">MacArthur Foundation </a>
+                        <a href="./about.html">ACA Partners </a>
                     </div>
                     <div>
                         <h5>Resources</h5>
                         <a href="./resources.html">Publications</a>
-                        <a href="./resources.html">E-Library</a>
                         <a href="./resources.html">Gallery</a>
                         <a href="./resources.html">Videos</a>
                     </div>
                     <div>
                         <h5>Infographics</h5>
-                        <a href="./infographics.html">Duis aliquam</a>
-                        <a href="./infographics.html">Duis aliquam</a>
-                        <a href="./infographics.html">Duis aliquam</a>
-                        <a href="./infographics.html">Duis aliquam</a>
-                        <a href="./infographics.html">Duis aliquam</a>
+                        <a href="./infographics.html">All infographics</a>
+                        <a href="./infographics.html">Governance </a>
+                        <a href="./infographics.html">Convictions & Recovery </a>
+                        <a href="./infographics.html">Citizens </a>
+                        <a href="./infographics.html">Agencies  </a>
                     </div>
                     <div>
-                        <h5>Resources</h5>
+                        <h5>Projects</h5>
+                        <a href="./resources.html">Past projects</a>
+                        <a href="./resources.html">Present Project</a>
+                        <!-- <a href="./resources.html">Duis aliquam</a>
                         <a href="./resources.html">Duis aliquam</a>
-                        <a href="./resources.html">Duis aliquam</a>
-                        <a href="./resources.html">Duis aliquam</a>
-                        <a href="./resources.html">Duis aliquam</a>
-                        <a href="./resources.html">Duis aliquam</a>
+                        <a href="./resources.html">Duis aliquam</a> -->
+                    </div>
+                    <div>
+                        <h5>Careers</h5>
+                        <a href="./resources.html"> News & Events </a>
+                        <a href="./resources.html">Trending</a>
+                        <a href="./resources.html">Breaking News </a>
+                        <a href="./resources.html">Previous Posts </a>
+                        <a href="./resources.html">Upcoming Events</a>
                     </div>
                 </div>
             </div>

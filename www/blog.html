@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,129 +6,402 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News & Events - CDD</title>
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <script src="js/main.js"></script>
+    <title>{{Infographics}}</title>
+    {{> head}}
+
+    
 </head>
 
+
+<style>
+   html,
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.content-slider {
+  width: 100vw;
+  height: 40px;
+}
+
+.slider {
+  height: 0px;
+  width: 680px;
+  margin: 5px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+.mask {
+  overflow: hidden;
+  height: 28px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: auto;
+  height: 0px;
+  position: absolute;
+  top: -325px;
+  list-style: none;
+}
+
+.slider .quote {
+    color: white;
+  font-size: 12px;
+  font-style: bold;
+}
+
+.slider .source {
+  font-size: 20px;
+  text-align: right;
+}
+{{#section 50 label="Breaking News" multiple=true}}
+.slider li.anim{{id}} {
+  animation: cycle{{id}} 10s linear infinite;
+}
+
+{{/section}}
+
+/* .slider li.anim2 {
+  animation: cycle2 20s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 20s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 20s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 20s linear infinite;
+} */
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  76% {
+    top: -325px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+    </style>
+
+
+
+<style>
+    .slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  justify-content: center;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 8px;
+  color: #333;
+  background-color: red;
+}
+
+.dots-container .dot.active {
+  border: 1px solid green;
+}
+
+
+body h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+/* .slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px; 
+  margin: auto;
+  position: relative;
+} */
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+</style>
+    
+    
 <body>
-    <nav>
-        <div class="menu">
-            <a class="item" href="./about.html">About Us</a>
-            <div class="item">
-                <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                <div class="dropdown" id="resources">
-                    <ul class="menu">
-                        <li>
-                            <a href="./resources.html">Publications</a>
-                        </li>
-                        <li>
-                            <a href="./resources.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="./resources.html">Videos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                <div class="dropdown" id="infographics">
-                    <ul class="menu">
-                        <li>
-                            <a href="./infographics.html">Governance</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Convictions & Recovery</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Citizens</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Agencies</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="logo">
-            <img src="img/agency4.png" alt="agency4" class="partner">
-            <img src="img/agency6.png" alt="agency6" class="partner">
-            <img src="img/agency5.png" alt="agency5" class="partner">
-            <img src="img/logo.svg" alt="Logo">
-            <img src="img/agency1.png" alt="agency1" class="partner">
-            <img src="img/agency2.png" alt="agency2" class="partner">
-            <img src="img/agency3.png" alt="agency3" class="partner">
-        </div>
-        <div class="menu">
-            <a class="item" href="./blog.html">News & Events</a>
-            <a class="item" href="./log-in.html">Log In</a>
-            <a href="./sign-up.html">
-                <button class="item btn nav blue">Create Profile</button>
-            </a>
-            <i class="icon-search txt-primary"></i>
-        </div>
-        <i class="icon-menu" data-target="foldable-menu" data-toggle="open"></i>
-        <div class="foldable-menu" data-toggled="false">
-            <div class="toggle">
-                <i class="icon-cancel" data-target="foldable-menu" data-toggle="close"></i>
-            </div>
-            <div class="menu">
-                <a class="item" href="./about.html">About Us</a>
-                <div class="item">
-                    <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                    <div class="dropdown" id="resources">
-                        <ul class="menu">
-                            <li>
-                                <a href="./resources.html">Publications</a>
-                            </li>
-                            <li>
-                                <a href="./resources.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="./resources.html">Videos</a>
-                            </li>
-                        </ul>
+
+    {{> header}}
+
+        <main>
+            <div class="hero small" style="background-image: url(img/blog-bg.png); background-position: bottom;">
+                <div class="container no-controls">
+                    <div class="page-info">
+                        <h3 class="txt-primary txt-center m-0" >News & Events</h3>
+                        <p class="txt-white txt-center">Keep up with recent stories</p>
                     </div>
                 </div>
-                <div class="item">
-                    <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                    <div class="dropdown" id="infographics">
-                        <ul class="menu">
-                            <li>
-                                <a href="./infographics.html">Governance</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Convictions & Recovery</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Citizens</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Agencies</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <a class="item" href="./blog.html">News & Events</a>
-                <a class="item" href="./log-in.html">Log In</a>
-                <a href="./sign-up.html">
-                    <button class="item btn nav blue">Create Profile</button>
-                </a>
             </div>
-        </div>
-    </nav>
-    <main class="margined">
-        <div class="hero small" style="background-image: url(img/blog-bg.png); background-position: bottom;">
-            <div class="container no-controls">
-                <div class="page-info">
-                    <h3 class="txt-white txt-center">News & Events</h3>
-                    <p class="txt-white txt-center">Get an update on all what’s happening in the Anti-Corruption Sector</p>
-                </div>
-            </div>
-        </div>
+            
+
+            <!--Chat Widgets Starts Here-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/608ce49462662a09efc3da99/1f4j5ppuk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+            <!--Chat Widgets Ends Here-->
+<!--            
         <div class="chat-bot">
             <div class="dropdown" id="chat">
                 <div class="content">
@@ -140,489 +414,277 @@
                     <button class="btn light-green">Email Us</button>
                 </div>
             </div>
-            <div class="chat-btn rounded btn green" data-action="dropdown" data-target="chat"></div>
-        </div>
+            <div class="chat-btn flex-center rounded btn green" data-action="dropdown" data-target="chat">
+                <i class="icon-chat"></i>
+            </div>
+        </div> -->
+        {{#section 19 label="News Trending" multiple=true}}
         <div class="section auto-height blog">
             <div class="col-2">
                 <div class="wid-45 flex-center">
-                    <img src="img/main-blog.png" width="100%" alt="Our Partners are key">
+                    <img src="{{TrendsImage}}" width="100%" alt="Our Partners are key">
                 </div>
                 <div class="wid-36 pad-2">
                     <div class="head">
                         <span class="category">Trending</span>
-                        <div>
-                            <i>H</i>
-                            <i>U</i>
-                            <i>B</i>
-                        </div>
+                        
+                        
                     </div>
-                    <h4>CDD creates Online
-                        Database for all ACAs</h4>
-                    <p class="txt-dark small">Earlier this month, a viral video depicting hyper-realistic cakes as everyday items had folks on social media double-guessing every other post, and sometimes even their own realities, effectively launching the next meme : “Is this real or is this cake?”
+                    <h4>{{TrendsTitle}}</h4>
+                    <p class="txt-dark small">{{TrendsDescription}}
                     </p>
                     <div class="info">
-                        <span class="time">2 hours ago</span>
-                        <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        <span class="time">{{_updated_at format="%m/%d/%Y"}}</span>
+                        <span class="author">{{TrendsAuthor}}</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section auto-height breaking-news">
-            <div>
-                <div class="label">
-                    <p class="small m-0 txt-red thin">Breaking News</p>
+    
+        {{/section}}
+
+        <div class="breaking-news" style="width: 0%; padding: 0%;">
+            <div style="width: 50vw;">
+                <div class="label" style="width: 30%;"> 
+                    <p class="small m-0 txt-red thin" style="width: 100%;">Breaking News</p>
                 </div>
-                <div class="news">
-                    <p class="small txt-white txt-center m-0 thin">All ACAs are hereby invited for an Annual General Meeting at the Sheraton Hotel, Victoria Island.</p>
-                </div>
+
+                    <!-- Text slide -->
+
+                    <div class="content-slider" style="width: 80%; box-sizing: content-box;">
+                        <div class="slider" style="width: 80%;">
+                          <div class="mask" style="width: 80%;">
+                            <ul>
+                              {{#section 50 label="Breaking News" multiple=true}}
+                              <li class="anim{{id}}">
+                                <div class="quote">{{Breaking}}</div>
+                                
+                              </li>
+                              {{/section}}
+                              <!-- <li class="anim2">
+                                <div class="quote">All ACA staff keeps working hard to fight curruption.</div>
+                              </li>
+                              <li class="anim3">
+                                <div class="quote">Nigeria crime rate reduce by 33.6%.</div>
+                              </li>
+                              <li class="anim4">
+                                <div class="quote">ACA lunch it third divisional secretariat.</div>
+                              </li>
+                              <li class="anim5">
+                                <div class="quote">NDLEA arrested four suspect.</div>
+                              </li> -->
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
             </div>
         </div>
+
         <div class="section auto-height stories">
             <div class="menu">
                 <ul>
                     <li class="item active">
-                        <a href="#">Latest Stories</a>
+                        <a href="#">All</a>
                     </li>
                     <li class="item">
-                        <a href="#">Think</a>
+                        <a href="#">Press Releases</a>
                     </li>
                     <li class="item">
-                        <a href="#">Health</a>
+                        <a href="#">Crime Cases</a>
                     </li>
                     <li class="item">
-                        <a href="#">Health</a>
+                        <a href="#">ACA News</a>
                     </li>
                 </ul>
             </div>
             <div class="content">
-                <div class="card story">
+           
+                
+        {{#section news label="News Item" multiple=true}}
+        
+        <div class="card story">
                     <div class="content">
-                        <div class="img" style="background-image: url(img/news1.png);"></div>
+                        <div class="img" style="background-image: url({{NewsImage}});"></div>
                         <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                            <h6><a href="{{_permalink}}">{{NewsTitle}}</a></h6>
+                            <p>{{NewsBody1}}</p>
                         </div>
                     </div>
                     <div class="footer">
                         <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                            <span class="time">{{_updated_at format="%m/%d/%Y"}}</span>
+                            <span class="author">{{NeewsAuthor}}</span>
                         </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news2.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news2.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news3.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news4.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news4.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news3.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news4.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news4.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news3.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news4.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card story">
-                    <div class="content">
-                        <div class="img" style="background-image: url(img/news4.png);"></div>
-                        <div class="text">
-                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
-                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="info">
-                            <span class="time">2 hours ago</span>
-                            <span class="author">By Lucy Hiddleston  |  4min read</span>
-                        </div>
-                        <div class="actions">
-                            <div>
-                                <i>H</i>
-                                <span>8</span>
-                            </div>
-                            <div>
-                                <i>U</i>
-                                <span>2</span>
-                            </div>
-                            <div>
-                                <i>B</i>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+                
+        {{/section}}
+        
+       
             </div>
-            <div class="pagination">
-                <button class="btn small rounded white">1</button>
-                <button class="btn small rounded white">2</button>
-                <button class="btn small rounded white">...</button>
-                <button class="btn small rounded green">Next</button>
-            </div>
+           
         </div>
-        <div class="section auto-height upcoming-events">
-            <div class="head">
-                <i>C</i>
-                <h6>Upcoming Events</h6>
-            </div>
-            <div class="content">
-                <div class="event">
-                    <div class="img" style="background-image: url(img/event1.png);"></div>
-                    <div class="text">
-                        <h6>Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h6>
-                        <p>The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.</p>
+
+        {{> pagination}}
+
+
+        <!-- detailed carousel -->
+
+        <div class="slide-container">
+
+            <div class="slide fade">
+                <div class="auto-height upcoming-events">
+                    <div class="head">
+                        <i>C</i>
+                        <h6>Upcoming Events</h6>
+                    </div>
+                    <div class="content">
+                      {{#section 51 label="Upcoming Events" multiple=true}}
+                        <div class="event">
+                            <div class="img" style="background-image: url(img/check.png);"></div>
+                            <div class="text">
+                                <h6>{{UpcomingHeadline}}</h6>
+                                <p>{{UpcomingDescription}}</p>
+                            </div>
+                        </div>
+                        {{/section}}
+                        <!-- <div class="event">
+                            <div class="img" style="background-image: url(img/check.png);"></div>
+                            <div class="text">
+                                <h6>bbjkb bjbjbkv a mark in Asia: East Bengal’s 2003 Asean Cup win – a defining moment for Indian club football</h6>
+                                <p>Beating some of the finest teams from South Asia, East Bengal became the first Indian club to win an officially recognised Asian football tournament.</p>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="event">
-                    <div class="img" style="background-image: url(img/event2.png);"></div>
-                    <div class="text">
-                        <h6>Making a mark in Asia: East Bengal’s 2003 Asean Cup win – a defining moment for Indian club football</h6>
-                        <p>Beating some of the finest teams from South Asia, East Bengal became the first Indian club to win an officially recognised Asian football tournament.</p>
+                
+            </div>
+
+
+
+            <div class="slide fade">
+                <div class="section auto-height upcoming-events">
+                    <div class="head">
+                        <i>C</i>
+                        <h6>Upcoming Events</h6>
+                    </div>
+                    <div class="content">
+                        <div class="event">
+                            <div class="img" style="background-image: url(img/Infographics.png);"></div>
+                            <div class="text">
+                                <h6>Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h6>
+                                <p>The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.</p>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="img" style="background-image: url(img/Infographics.png);"></div>
+                            <div class="text">
+                                <h6>Making a mark in Asia: East Bengal’s 2003 Asean Cup win – a defining moment for Indian club football</h6>
+                                <p>Beating some of the finest teams from South Asia, East Bengal became the first Indian club to win an officially recognised Asian football tournament.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-            <div class="pagination">
-                <span></span>
-                <span class="active"></span>
-                <span></span>
-                <span></span>
+
+
+
+
+
+            <div class="slide fade">
+                <div class="section auto-height upcoming-events">
+                    <div class="head">
+                        <i>C</i>
+                        <h6>Upcoming Events</h6>
+                    </div>
+                    <div class="content">
+                        <div class="event">
+                            <div class="img" style="background-image: url(img/event1.png);"></div>
+                            <div class="text">
+                                <h6>Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h6>
+                                <p>The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.</p>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="img" style="background-image: url(img/event2.png);"></div>
+                            <div class="text">
+                                <h6>Making a mark in Asia: East Bengal’s 2003 Asean Cup win – a defining moment for Indian club football</h6>
+                                <p>Beating some of the finest teams from South Asia, East Bengal became the first Indian club to win an officially recognised Asian football tournament.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+
+
         </div>
+
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        
+        
     </main>
-    <footer class="bg-dark-blue">
-        <div class="sections">
-            <div>
-                <h5>Contact</h5>
-                <a href="./index.html">cddwestafrica.org</a>
-            </div>
-            <div>
-                <div>
-                    <h5>About</h5>
-                    <a href="./about.html">About CDD</a>
-                    <a href="./about.html">About Project</a>
-                </div>
-                <div>
-                    <h5>Resources</h5>
-                    <a href="./resources.html">Publications</a>
-                    <a href="./resources.html">E-Library</a>
-                    <a href="./resources.html">Gallery</a>
-                    <a href="./resources.html">Videos</a>
-                </div>
-                <div>
-                    <h5>Infographics</h5>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                </div>
-                <div>
-                    <h5>Resources</h5>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                </div>
-            </div>
-        </div>
-        <hr class="divider">
-        <div class="foot">
-            <img src="img/footer-logo.png" alt="">
-            <p>2021 CDDWestAfrica inc. All rights reserved.</p>
-        </div>
-    </footer>
+    {{> footer}}
+
+    <script>
+        let currentSlide = 0;
+const slides = document.querySelectorAll(".slide")
+const dots = document.querySelectorAll('.dot')
+
+const init = (n) => {
+  slides.forEach((slide, index) => {
+    slide.style.display = "none"
+    dots.forEach((dot, index) => {
+      dot.classList.remove("active")
+    })
+  })
+  slides[n].style.display = "block"
+  dots[n].classList.add("active")
+}
+document.addEventListener("DOMContentLoaded", init(currentSlide))
+const next = () => {
+  currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+  init(currentSlide)
+}
+
+const prev = () => {
+  currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+  init(currentSlide)
+}
+
+document.querySelector(".next").addEventListener('click', next)
+
+document.querySelector(".prev").addEventListener('click', prev)
+
+
+setInterval(() => {
+  next()
+}, 6000);
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    console.log(currentSlide)
+    init(i)
+    currentSlide = i
+  })
+})
+    </script>
+
+
 </body>
 
 </html>
+

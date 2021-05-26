@@ -6,473 +6,303 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - CDD</title>
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <script src="js/main.js"></script>
+    {{> head}}
+<style>
+ button[data-filter="pdf"]:focus ~ div:not([class*="pdf"]) {
+  display:none;
+}
+
+button[data-filter="video"]:focus ~ div:not([class*="video"]) {
+  display:none;
+}
+
+button[data-filter="image"]:focus ~ div:not([class*="image"]) {
+  display:none;
+}
+
+button[data-filter="xlsx"]:focus ~ div:not([class*="xlsx"]) {
+  display:none;
+}
+
+button[data-filter="ppt"]:focus ~ div:not([class*="ppt"]) {
+  display:none;
+}
+</style>
+
 </head>
 
 <body>
-    <nav>
-        <div class="menu">
-            <a class="item" href="./about.html">About Us</a>
-            <div class="item">
-                <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                <div class="dropdown" id="resources">
-                    <ul class="menu">
-                        <li>
-                            <a href="./resources.html">Publications</a>
-                        </li>
-                        <li>
-                            <a href="./resources.html">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="./resources.html">Videos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                <div class="dropdown" id="infographics">
-                    <ul class="menu">
-                        <li>
-                            <a href="./infographics.html">Governance</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Convictions & Recovery</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Citizens</a>
-                        </li>
-                        <li>
-                            <a href="./infographics.html">Agencies</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="logo">
-            <img src="img/agency4.png" alt="agency4" class="partner">
-            <img src="img/agency6.png" alt="agency6" class="partner">
-            <img src="img/agency5.png" alt="agency5" class="partner">
-            <img src="img/logo.svg" alt="Logo">
-            <img src="img/agency1.png" alt="agency1" class="partner">
-            <img src="img/agency2.png" alt="agency2" class="partner">
-            <img src="img/agency3.png" alt="agency3" class="partner">
-        </div>
-        <div class="menu">
-            <a class="item" href="./blog.html">News & Events</a>
-            <a class="item" href="./log-in.html">Log In</a>
-            <a href="./sign-up.html">
-                <button class="item btn nav blue">Create Profile</button>
-            </a>
-            <i class="icon-search txt-primary"></i>
-        </div>
-        <i class="icon-menu" data-target="foldable-menu" data-toggle="open"></i>
-        <div class="foldable-menu" data-toggled="false">
-            <div class="toggle">
-                <i class="icon-cancel" data-target="foldable-menu" data-toggle="close"></i>
-            </div>
-            <div class="menu">
-                <a class="item" href="./about.html">About Us</a>
-                <div class="item">
-                    <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                    <div class="dropdown" id="resources">
-                        <ul class="menu">
-                            <li>
-                                <a href="./resources.html">Publications</a>
-                            </li>
-                            <li>
-                                <a href="./resources.html">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="./resources.html">Videos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                    <div class="dropdown" id="infographics">
-                        <ul class="menu">
-                            <li>
-                                <a href="./infographics.html">Governance</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Convictions & Recovery</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Citizens</a>
-                            </li>
-                            <li>
-                                <a href="./infographics.html">Agencies</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <a class="item" href="./blog.html">News & Events</a>
-                <a class="item" href="./log-in.html">Log In</a>
-                <a href="./sign-up.html">
-                    <button class="item btn nav blue">Create Profile</button>
-                </a>
-            </div>
-        </div>
-    </nav>
+
+    {{> header}}
     <main class="margined">
         <div class="hero small" style="background-image: url(img/resources-bg.png); background-position: bottom;">
             <div class="container no-controls">
                 <div class="page-info">
                     <h3 class="txt-primary txt-center m-0">Resources</h3>
-                    <p class="txt-black txt-center m-0">Downloadable Resources</p>
+                    <p class="txt-black txt-center m-0">Access the data you need</p>
                 </div>
             </div>
         </div>
-        <div class="chat-bot">
-            <div class="dropdown" id="chat">
-                <div class="content">
-                    <p>Fatima Saidu from CDD</p>
-                    <h6>Welcome to CDD</h6>
-                    <input type="text" name="" id="" placeholder="How can we help you ... ">
-                </div>
-                <div class="footer">
-                    <button class="btn light-green">Call Us</button>
-                    <button class="btn light-green">Email Us</button>
-                </div>
-            </div>
-            <div class="chat-btn rounded btn green" data-action="dropdown" data-target="chat"></div>
-        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
         <div class="section auto-height table resources">
             <div class="head">
                 <div class="left">
                     <span class="text">Filter By</span>
-                    <select name="filter" id="filter">
-                        <option value="Select">Select</option>
-                        <option value="Select">Select</option>
-                        <option value="Select">Select</option>
-                        <option value="Select">Select</option>
-                        <option value="Select">Select</option>
-                    </select>
+                    <br />
+                    <br />
+
+                    <!-- <select name="filter" id="filter">
+                        <option value="Select" class="filter-option" data-filter="*" onclick=filterResources(event)>Select</option>
+                        <option value="Select" class="filter-option" data-filter="pdf" onclick=filterResources(event)>PDF</option>
+                        <option value="Select" class="filter-option" data-filter="video" onclick=filterResources(event)>Video</option>
+                        <option value="Select" class="filter-option" data-filter="image" onclick=filterResources(event)>Image</option>
+
+                    </select> -->
                 </div>
                 <div class="right">
-                    <button class="btn dark-blue medium float-right">
+                    <!-- <button class="btn dark-blue medium float-right">
                         <img src="icons/upload-w.svg" alt="search" class="icon">
                         <span class="txt-white">Upload</span>
-                    </button>
+                    </button> -->
                 </div>
             </div>
-            <div class="content">
-                <table>
-                    <thead>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="select-all" id="select-all">
-                            </td>
-                            <td>Name</td>
-                            <td>Uploaded by</td>
-                            <td>Date added</td>
-                            <td>No. of Downloads</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="upload1" id="upload1">
-                                <span class="format">.pdf</span>
-                            </td>
-                            <td>2019 Zonal Intervention
-                                Projects [...]</td>
-                            <td>lindsey.stroud@gmail.com</td>
-                            <td>Dec 9, 2018</td>
-                            <td>1,290</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="content" data-jo="true" data-jo-content="repeated">
+                <div class="filteredList">
+                    <!-- <h3>Filters</h3> -->
+                    <button class="filter-option item btn nav blue" data-filter="pdf" tabindex="-1">pdf</button> 
+                    <button class="filter-option item btn nav blue" data-filter="video" tabindex="-1">video</button> 
+                    <button class="filter-option item btn nav blue" data-filter="image" tabindex="-1">image</button> 
+                    <button class="filter-option item btn nav blue" data-filter="xlsx" tabindex="-1">xlsx</button> 
+                    <button class="filter-option item btn nav blue" data-filter="ppt" tabindex="-1">ppt</button> 
+                    <button class="filter-option item btn nav blue" data-filter="*" tabindex="-1">All</button>
+                
+                    <div class="pdf">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="select-all" id="select-all">
+                                    </td>
+                                    <td>Name</td>
+                                    <td>Uploaded by</td>
+                                    <td>Date added</td>
+                                    <td>Download</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                        
+                            <tbody>
+        
+                                {{#section 15 label="Resources PDF" multiple=true}}
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="upload1" id="upload1">
+                                        <span class="format">pdf</span>
+                                    </td>
+                                    <td>{{pdfname}}</td>
+                                    <td>{{pdfauthoremail}}</td>
+                                    <td>{{_updated_at format="%m/%d/%Y"}}</td>
+                                    <td> <a href="{{pdflink }}" target="_blank"><button class="item btn nav blue">Download</button></a></td>
+                                </tr>
+                                {{/section}}
+        
+                                 </tbody>
+                            
+                                
+                        </table>
+        
+                    </div>
+    
+                    <div class="video">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="select-all" id="select-all">
+                                    </td>
+                                    <td>Name</td>
+                                    <td>Uploaded by</td>
+                                    <td>Date added</td>
+                                    <td>Download</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                        
+                            <tbody>
+        
+                                {{#section 16 label="Resources Video" multiple=true}}
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="upload1" id="upload1">
+                                        <span class="format">video</span>
+                                    </td>
+                                    <td>{{videoname}}</td>
+                                    <td>{{videoauthoremail}}</td>
+                                    <td>{{_updated_at format="%m/%d/%Y"}}</td>
+                                    <td> <a href="{{videolink }}" target="_blank"><button class="item btn nav blue">Watch</button></a></td>
+                                </tr>
+                                {{/section}}
+        
+                                 </tbody>
+                            
+                                
+                        </table>
+        
+                    </div>
+                    
+                    <div class="image">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="select-all" id="select-all">
+                                    </td>
+                                    <td>Name</td>
+                                    <td>Uploaded by</td>
+                                    <td>Date added</td>
+                                    <td>Download</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                        
+                            <tbody>
+        
+                                {{#section 17 label="Resources Image" multiple=true}}
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="upload1" id="upload1">
+                                        <span class="format">image</span>
+                                    </td>
+                                    <td>{{imagename}}</td>
+                                    <td>{{imageauthoremail}}</td>
+                                    <td>{{_updated_at format="%m/%d/%Y"}}</td>
+                                    <td> <a href="{{imagelink }}" target="_blank"><button class="item btn nav blue">View</button></a></td>
+                                </tr>
+                                {{/section}}
+        
+                                 </tbody>
+                            
+                                
+                        </table>
+        
+                    </div>
+    
+
+                    <div class="xlsx">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="select-all" id="select-all">
+                                    </td>
+                                    <td>Name</td>
+                                    <td>Uploaded by</td>
+                                    <td>Date added</td>
+                                    <td>Download</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                        
+                            <tbody>
+        
+                                {{#section 18 label="Resources Xlsx" multiple=true}}
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="upload1" id="upload1">
+                                        <span class="format">xlsx</span>
+                                    </td>
+                                    <td>{{xlsxname}}</td>
+                                    <td>{{xlsxauthoremail}}</td>
+                                    <td>{{_updated_at format="%m/%d/%Y"}}</td>
+                                    <td> <a href="{{xlsxlink }}" target="_blank"><button class="item btn nav blue">Download</button></a></td>
+                                </tr>
+                                {{/section}}
+        
+                                 </tbody>
+                            
+                                
+                        </table>
+        
+                    </div>
+    
+                    <div class="ppt">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="select-all" id="select-all">
+                                    </td>
+                                    <td>Name</td>
+                                    <td>Uploaded by</td>
+                                    <td>Date added</td>
+                                    <td>Download</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                        
+                            <tbody>
+        
+                                {{#section 19 label="Resources PPT" multiple=true}}
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="upload1" id="upload1">
+                                        <span class="format">ppt</span>
+                                    </td>
+                                    <td>{{pptname}}</td>
+                                    <td>{{pptauthoremail}}</td>
+                                    <td>{{_updated_at format="%m/%d/%Y"}}</td>
+                                    <td> <a href="{{pptlink }}" target="_blank"><button class="item btn nav blue">Download</button></a></td>
+                                </tr>
+                                {{/section}}
+        
+                                 </tbody>
+                            
+                                
+                        </table>
+        
+                    </div>
+    
+
+                  </div>
+                
+
+                
+
+                
             </div>
-            <div class="pagination">
-                <button class="btn small white">1</button>
-                <button class="btn small white">2</button>
-                <button class="btn small white">...</button>
-                <button class="btn small white">24</button>
-                <button class="btn small white">Next</button>
-            </div>
+            {{> pagination}}
+
         </div>
     </main>
-    <footer class="bg-dark-blue">
-        <div class="sections">
-            <div>
-                <h5>Contact</h5>
-                <a href="./index.html">cddwestafrica.org</a>
-            </div>
-            <div>
-                <div>
-                    <h5>About</h5>
-                    <a href="./about.html">About CDD</a>
-                    <a href="./about.html">About Project</a>
-                </div>
-                <div>
-                    <h5>Resources</h5>
-                    <a href="./resources.html">Publications</a>
-                    <a href="./resources.html">E-Library</a>
-                    <a href="./resources.html">Gallery</a>
-                    <a href="./resources.html">Videos</a>
-                </div>
-                <div>
-                    <h5>Infographics</h5>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                    <a href="./infographics.html">Duis aliquam</a>
-                </div>
-                <div>
-                    <h5>Resources</h5>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                    <a href="./resources.html">Duis aliquam</a>
-                </div>
-            </div>
-        </div>
-        <hr class="divider">
-        <div class="foot">
-            <img src="img/footer-logo.png" alt="">
-            <p>2021 CDDWestAfrica inc. All rights reserved.</p>
-        </div>
-    </footer>
+    {{> footer}}
 </body>
 
 </html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - CDD</title>
+  
+
+</head>
+
+<body>
+    {{> header}}
+    <main class="margined">
+        <div class="hero small" style="background-image: url(img/blog-bg.png); background-position: bottom;">
+            <div class="container no-controls">
+                <div class="page-info">
+                    <h3 class="txt-primary txt-center m-0" >News & Events</h3>
+                    <p class="txt-white txt-center">Get an update on all what’s happening in the Anti-Corruption Sector</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <div class="section auto-height blog">
+            <div class="col-2">
+                <div class="wid-45 flex-center">
+                    <img src="img/main-blog.png" width="100%" alt="Our Partners are key">
+                </div>
+                <div class="wid-36 pad-2">
+                    <div class="head">
+                        <span class="category">Trending</span>
+                        <div>
+                            <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                            <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                            <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                        </div>
+                    </div>
+                    <h4>CDD creates Online
+                        Database for all ACAs</h4>
+                    <p class="txt-dark small">Earlier this month, a viral video depicting hyper-realistic cakes as everyday items had folks on social media double-guessing every other post, and sometimes even their own realities, effectively launching the next meme : “Is this real or is this cake?”
+                    </p>
+                    <div class="info">
+                        <span class="time">2 hours ago</span>
+                        <span class="author">By Lucy Hiddleston  |  4min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section auto-height breaking-news">
+            <div>
+                <div class="label">
+                    <p class="small m-0 txt-red thin">Breaking News</p>
+                </div>
+                <div class="news">
+                    <p class="small txt-white txt-center m-0 thin">All ACAs are hereby invited for an Annual General Meeting at the Sheraton Hotel, Victoria Island.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section auto-height stories">
+            <div class="menu">
+                <ul>
+                    <li class="item active">
+                        <a href="#">Latest Stories</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Think</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Health</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Health</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news1.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news2.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i> <svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                     </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news2.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news3.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news4.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news4.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news3.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news4.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news4.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news3.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news4.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card story">
+                    <div class="content">
+                        <div class="img" style="background-image: url(img/news4.png);"></div>
+                        <div class="text">
+                            <h6>John Lewis to make final journey across Edmund Pettus Bridge in procession</h6>
+                            <p>The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="time">2 hours ago</span>
+                            <span class="author">By Lucy Hiddleston  |  4min read</span>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>8</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span>2</span>
+                            </div>
+                            <div>
+                                <i><svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6152 16.5743C8.6152 16.5743 0.263672 8.37871 0.263672 5.46864C0.263672 2.37019 1.79096 0.871094 4.96141 0.871094C6.52732 0.871094 8.6152 3.40431 8.6152 3.40431C8.6152 3.40431 10.7031 0.871094 12.269 0.871094C15.4394 0.871094 16.9667 2.36921 16.9667 5.46864C16.9667 8.37871 8.6152 16.5743 8.6152 16.5743Z" fill="#C31815"/>
+                                    </svg>
+                                    </i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{> pagination}}
+           
+        </div>
+        <div class="section auto-height upcoming-events">
+            <div class="head">
+                <i>C</i>
+                <h6>Upcoming Events</h6>
+            </div>
+            <div class="content">
+                <div class="event">
+                    <div class="img" style="background-image: url(img/event1.png);"></div>
+                    <div class="text">
+                        <h6>Serological surveys are being conducted to test for coronavirus antibodies. How useful are they?</h6>
+                        <p>The authorities are hoping to find that a substantial proportion of the population has already been infected with the virus – and so is immune.</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="img" style="background-image: url(img/event2.png);"></div>
+                    <div class="text">
+                        <h6>Making a mark in Asia: East Bengal’s 2003 Asean Cup win – a defining moment for Indian club football</h6>
+                        <p>Beating some of the finest teams from South Asia, East Bengal became the first Indian club to win an officially recognised Asian football tournament.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </main>
+
+    {{> footer}}
+</body>
+
+</html> 

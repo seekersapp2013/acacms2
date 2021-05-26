@@ -5,12 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{tile label="Website Title"}}</title>
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/icons.css">
-        <script src="js/main.js"></script>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
+        {{> head}}
+    
+<style> -->
        .dropdown {
   position: relative;
   display: inline-block;
@@ -29,33 +26,142 @@
 .dropdown:hover .dropdown-content {
   display: block;
 } 
-        </style>
+
+
+
+/*  */
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f8f7fffa;
+  background-color: #f8f7fffa;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 39px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.mobileshow { 
+display:none; 
+}
+@media screen and (max-width: 500px) {
+.mobileshow { 
+display:block; }
+}
+
+
+        </style> 
     </head>
     <body>
 
+
+
+        
         
         <nav>
             
             <div class="menu">
-
-                <a class="item" href="./about.html">About Us</a>
-
                 <div class="dropdown item">
                     <!-- <span>Mouse over me</span> -->
-                    <a href="#" data-action="dropdown" data-target="resources" >Resources<i class="fa fa-angle-down"></i></a>
+                    <a href="./about.html" data-action="dropdown" data-target="resources" ><b>About Us</b><i class="fa fa-angle-down"></i></a>
                  
                     <div class="dropdown-content">
                     <!-- <p>Hello World!</p> -->
                     <div class="dropdown" id="resources">
                         <ul class="menu">
                             <li>
-                                <a href="./resources.html">Publications</a>
+                                <a href="./about.html#CDD" class="item"><h5>CDD</h5></a>
                             </li>
                             <li>
-                                <a href="./resources.html">Gallery</a>
+                                <a href="./about.html#MacArthur Foundation"><h5>MacArthur Foundation</h5></a>
                             </li>
                             <li>
-                                <a href="./resources.html">Videos</a>
+                                <a href="./about.html#EFCC"><h5>EFCC</h5></a>
+                            </li>
+                            <li>
+                                <a href="./about.html#ICPC"><h5>ICPC</h5></a>
+                            </li>
+                            <li>
+                                <a href="./about.html#NFIU"><h5>NFIU</h5></a>
+                            </li>
+                            
+                            <li>
+                                <a href="./about.html#OAuGF"><h5>OAuGF</h5></a>
+                            </li>
+                            
+                            <li>
+                                <a href="./about.html#TUGAR"><h5>TUGAR</h5></a>
+                            </li>
+                            
+                            <li>
+                                <a href="./about.html#PACAC"><h5>PACAC</h5></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                
+
+                <!-- <a class="item" href="./about.html">About Us</a> -->
+
+                <div class="dropdown item">
+                    <!-- <span>Mouse over me</span> -->
+                    <a href="./resources.html" data-action="dropdown" data-target="resources" ><b>Resources</b><i class="fa fa-angle-down"></i></a>
+                 
+                    <div class="dropdown-content">
+                    <!-- <p>Hello World!</p> -->
+                    <div class="dropdown" id="resources">
+                        <ul class="menu">
+                            <li>
+                                <a href="./resources.html"><h5>Publications</h5></a>
+                            </li>
+                            <li>
+                                <a href="./resources.html"><h5>Gallery</h5></a>
+                            </li>
+                            <li>
+                                <a href="./resources.html"><h5>Videos</h5></a>
                             </li>
                         </ul>
                     </div>
@@ -64,23 +170,23 @@
                   
                   <div class="dropdown item">
                     <!-- <span>Mouse over me</span> -->
-                    <a href="#" data-action="dropdown" data-target="resources" >Infographics<i class="fa fa-angle-down"></i></a>
+                    <a href="./infographics.html" data-action="dropdown" data-target="resources" ><b>Infographics</b><i class="fa fa-angle-down"></i></a>
                  
                     <div class="dropdown-content">
                     <!-- <p>Hello World!</p> -->
                     <div class="dropdown" id="infographics">
                         <ul class="menu">
                             <li>
-                                <a href="./infographics.html">Governance</a>
+                                <a href="./infographics.html"><h5>Governance</h5></a>
                             </li>
                             <li>
-                                <a href="./infographics.html">Convictions & Recovery</a>
+                                <a href="./infographics.html"><h5>Convictions & Recovery</h5></a>
                             </li>
                             <li>
-                                <a href="./infographics.html">Citizens</a>
+                                <a href="./infographics.html"><h5>Citizens</h5></a>
                             </li>
                             <li>
-                                <a href="./infographics.html">Agencies</a>
+                                <a href="./infographics.html"><h5>Agencies</h5></a>
                             </li>
                         </ul>
                     </div>
@@ -100,63 +206,134 @@
                 <a class="item" href="./"> <img src="img/agency3.png" alt="agency3" class="partner"></a>
             </div>
             <div class="menu">
-                <a class="item" href="./blog.html">News & Events</a>
-                <a class="item" href="./log-in.html">Log In</a>
-                <a href="./sign-up.html">
-                    <button class="item btn nav blue">Create Profile</button>
+                <a class="item" href="./blog.html"><b>News & Events</b></a>
+                <a class="item" href="https://app.acaportal.ng/login"><b>Log In</b></a>
+                <a href="https://app.acaportal.ng/register">
+                    <button class="item btn nav blue"><b> Profile</b></button>
                 </a>
                 <i class="icon-search txt-primary"></i>
             </div>
-            <i class="icon-menu" data-target="foldable-menu" data-toggle="open"></i>
-            <div class="foldable-menu" data-toggled="false">
-                <div class="toggle">
-                    <i class="icon-cancel" data-target="foldable-menu" data-toggle="close"></i>
-                </div>
-                <div class="menu">
-                    <a class="item" href="./about.html">About Us</a>
-                    <div class="item">
-                        <a href="#" data-action="dropdown" data-target="resources">Resources</a>
-                        <div class="dropdown" id="resources">
-                            <ul class="menu">
-                                <li>
-                                    <a href="./resources.html">Publications</a>
-                                </li>
-                                <li>
-                                    <a href="./resources.html">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="./resources.html">Videos</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" data-action="dropdown" data-target="infographics">Infographics</a>
-                        <div class="dropdown" id="infographics">
-                            <ul class="menu">
-                                <li>
-                                    <a href="./infographics.html">Governance</a>
-                                </li>
-                                <li>
-                                    <a href="./infographics.html">Convictions & Recovery</a>
-                                </li>
-                                <li>
-                                    <a href="./infographics.html">Citizens</a>
-                                </li>
-                                <li>
-                                    <a href="./infographics.html">Agencies</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="item" href="./blog.html">News & Events</a>
-                    <a class="item" href="./log-in.html">Log In</a>
-                    <a href="./sign-up.html">
-                        <button class="item btn nav blue">Create Profile</button>
-                    </a>
-                </div>
-            </div>
-        </nav>
+            
+            <!-- <i class="icon-menu" data-target="foldable-menu" data-toggle="open"></i> -->
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+
     
+    <div class="dropdown item">
+        <!-- <span>Mouse over me</span> -->
+        <a href="#" data-action="dropdown" data-target="resources" ><b>About US</b><i class="fa fa-angle-down"></i></a>
+     
+        <div class="dropdown-content">
+        <!-- <p>Hello World!</p> -->
+        <div class="dropdown" id="resources">
+            <ul class="menu">
+                <li>
+                    <a href="./about.html" class="item"><h5>CDD</h5></a>
+                </li>
+                <li>
+                    <a href="./about.html"><h5>MacArthur Foundation</h5></a>
+                </li>
+                <li>
+                    <a href="./about.html"><h5>EFCC</h5></a>
+                </li>
+                <li>
+                    <a href="./about.html"><h5>ICPC</h5></a>
+                </li>
+                <li>
+                    <a href="./about.html"><h5>ICPC</h5></a>
+                </li>
+                
+                <li>
+                    <a href="./about.html"><h5>OAuGF</h5></a>
+                </li>
+                
+                <li>
+                    <a href="./about.html"><h5>TUGAR</h5></a>
+                </li>
+                
+                <li>
+                    <a href="./about.html"><h5>PACAC</h5></a>
+                </li>
+                
+            </ul>
+        </div>
+        </div>
+      </div>
+
+          <div class="dropdown item">
+            <!-- <span>Mouse over me</span> -->
+            <a href="#" data-action="dropdown" data-target="resources" ><b>Resources</b><i class="fa fa-angle-down"></i></a>
+         
+            <div class="dropdown-content">
+            <!-- <p>Hello World!</p> -->
+            <div class="dropdown" id="resources">
+                <ul class="menu">
+                    <li>
+                        <a href="./resources.html"><h5>Publications</h5></a>
+                    </li>
+                    <li>
+                        <a href="./resources.html"><h5>Gallery</h5></a>
+                    </li>
+                    <li>
+                        <a href="./resources.html"><h5>Videos</h5></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+          </div>
+
+
+          
+          <div class="dropdown item">
+            <!-- <span>Mouse over me</span> -->
+            <a href="#" data-action="dropdown" data-target="resources" ><b>Infographics</b><i class="fa fa-angle-down"></i></a>
+         
+            <div class="dropdown-content">
+            <!-- <p>Hello World!</p> -->
+            <div class="dropdown" id="infographics">
+                <ul class="menu">
+                    <li>
+                        <a href="./infographics.html"><h5>Governance</h5></a>
+                    </li>
+                    <li>
+                        <a href="./infographics.html"><h5>Convictions & Recovery</h5></a>
+                    </li>
+                    <li>
+                        <a href="./infographics.html"><h5>Citizens</h5></a>
+                    </li>
+                    <li>
+                        <a href="./infographics.html"><h5>Agencies</h5></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+          </div>
+
+
+          
+
+
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer" class="mobileshow" onclick="openNav()">&#9776;</span>
+      
+        </nav>
+
+
+        
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            </script>
+            
     </body>
 </html>

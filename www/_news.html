@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Infographics}}</title>
+    {{> head}}
+
+    
+</head>
+
+<body>
+
+    {{> header}}
+
+        <main>
+            <div class="hero small" style="background-image: url(img/blog-bg.png); background-position: bottom;">
+                <div class="container no-controls">
+                    <div class="page-info">
+                        <h3 class="txt-primary txt-center m-0" >News & Events</h3>
+                        <p class="txt-white txt-center">Get an update on all what’s happening in the Anti-Corruption Sector</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--Chat Widgets Starts Here-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/608ce49462662a09efc3da99/1f4j5ppuk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+
+    {{#section news label="News Item" }}
+        <div class="section auto-height blog">
+            <div class="col-2">
+                <div class="wid-45 flex-center">
+                    <img src="NewsImage}}" width="100%" alt="Our Partners are key">
+                </div>
+                <div class="wid-36 pad-2">
+                    <div class="head">
+                        <!-- <span class="category">Trending</span> -->
+                        
+                    </div>
+                    <h4>CDD {{NewsTitle}}</h4>
+                    <p class="txt-dark small">{{NewsBody1}}
+                    </p>
+                    <div class="info">
+                        <span class="time">{{_updated_at format="%m/%d/%Y"}}</span>
+                        <span class="author">{{NeewsAuthor}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        {{/section}}
+        
+
+           
+                
+       
+          
+            </div>
+           
+        </div>
+
+        
+    </main>
+    {{> footer}}
+
+</body>
+
+</html>
+
