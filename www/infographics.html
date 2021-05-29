@@ -9,6 +9,31 @@
     <title>{{Infographics}}</title>
     {{> head}}
 
+    <style>
+        button[data-filter="Governance"]:focus ~ div:not([class*="Governance"]) {
+         display:none;
+       }
+       
+       button[data-filter="Convictions & Recovery"]:focus ~ div:not([class*="Convictions & Recovery"]) {
+         display:none;
+       }
+       
+       button[data-filter="Citizens & Agencies"]:focus ~ div:not([class*="Citizens & Agencies"]) {
+         display:none;
+       }
+       
+       button[data-filter="Citizens"]:focus ~ div:not([class*="Citizens"]) {
+         display:none;
+       }
+       
+       button[data-filter="Agencies"]:focus ~ div:not([class*="Agencies"]) {
+         display:none;
+       }
+       .margin{
+           margin-left: 40px;
+       }
+       </style>
+       
     
 </head>
 
@@ -41,180 +66,54 @@
     </script>
     <!--End of Tawk.to Script-->
 
+<br />
+<br />
 
+    <button class="filter-option item btn nav blue margin" data-filter="Governance" tabindex="-1">Governance</button> 
+    <button class="filter-option item btn nav blue" data-filter="Convictions & Recovery" tabindex="-1">Convictions & Recovery</button> 
+    <!-- <button class="filter-option item btn nav blue" data-filter="image" tabindex="-1">image</button>  -->
+    <button class="filter-option item btn nav blue" data-filter="Citizens" tabindex="-1">Citizens</button> 
+    <button class="filter-option item btn nav blue" data-filter="Agencies" tabindex="-1">Agencies</button> 
+    <button class="filter-option item btn nav blue" data-filter="*" tabindex="-1">All</button>
+    <div class="section auto-height infographics" data-jo="true" data-jo-content="repeated">
 
-            <!--Chat Widgets Ends Here-->
-<!--            
-        <div class="chat-bot">
-            <div class="dropdown" id="chat">
-                <div class="content">
-                    <p>Fatima Saidu from CDD</p>
-                    <h6>Welcome to CDD</h6>
-                    <input type="text" name="" id="" placeholder="How can we help you ... ">
-                </div>
-                <div class="footer">
-                    <button class="btn light-green">Call Us</button>
-                    <button class="btn light-green">Email Us</button>
-                </div>
-            </div>
-            <div class="chat-btn flex-center rounded btn green" data-action="dropdown" data-target="chat">
-                <i class="icon-chat"></i>
-            </div>
-        </div> -->
-
-
-        <div class="section auto-height infographics" data-jo="true" data-jo-content="repeated">
-            <div class="items">
-                
-            {{#section 9 label="Infographics" multiple=true sortable=true}}
-                <div class="card">
-                    <div class="img" style="background-image: url({{infographicslogo}});"></div>
-                    <div class="details"> 
-                        <h5 class="">{{infographicstitle}}</h5>
-                        <p class="small txt-blue">{{infographicsdate}} </p>
-                    </div>
-                </div>
-                
-        {{/section}}
+            
         
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
             
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-       
 
-
-                <!-- <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img" style="background-image: url(img/newshead1.png);"></div>
-                    <div class="details"> 
-                        <h5 class="">Buharimeter 2019</h5>
-                        <p class="small txt-blue">Nov 12 2019 </p>
-                    </div>
-                </div>  -->
-          
-            </div>
-           
+    
+<div class="">
+    <div class="items">
+    {{#section infographicsitems label="Infographics2" multiple=true sortable=true}}
+    <a href="{{_permalink}}.html" target="_blank">
+    <div class="card">
+        <div class="img" style="background-image: url({{infographicslogo}});"></div>
+        <div class="details"> 
+            <h5 class="">{{infographicstitle}}</h5>
+            <p class="small txt-blue">{{_updated_at format="%m/%d/%Y"}} </p>
         </div>
+    </div>
+</a>
+{{/section}}
+
+
+        </div>
+       
+    </div>
+</div>
+</div>
+
+    <div class="Governance">
+        No Governance Data
+    </div>
+    <div class="Convictions & Recovery">No Convictions & Recovery Data</div>
+<!-- <div class="image">No Image Data</div> -->
+<div class="Citizens">No Citizens Data</div>
+<div class="Agencies">No Agencies Data</div>
+
 
         {{> pagination}}
-        <!-- <div class="footer flex-center pad-4">
-            <button class="btn dim-blue nav" onclick="plusSlides(1)">Next Page</button>
-        </div> -->
+
     </main>
     {{> footer}}
 
